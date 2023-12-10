@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import { FC } from 'react';
 
 import { ICar } from '@/app/types';
@@ -10,7 +11,7 @@ import { StyledItem, StyledList } from './CatalogList.styled';
 
 interface ICatalogListProps {
   data: ICar[];
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
 }
 
 export const CatalogList: FC<ICatalogListProps> = ({ data, style }) => {
