@@ -46,6 +46,9 @@ module.exports = {
     'import/prefer-default-export': 0,
     'import/extensions': 0,
     'no-console': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/self-closing-comp': 'off',
+    'no-unused-expressions': 'off',
     'react/function-component-definition': [
       2,
       {
@@ -53,6 +56,7 @@ module.exports = {
         unnamedComponents: 'arrow-function',
       },
     ],
+    'no-param-reassign': 0,
     'react/prop-types': 'off',
     'jsx-a11y/label-has-associated-control': [
       'error',
@@ -70,5 +74,6 @@ module.exports = {
         },
       },
     ],
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
 };

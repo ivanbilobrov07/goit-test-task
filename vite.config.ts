@@ -17,7 +17,7 @@ export default defineConfig({
       },
     ],
   },
-  base: '/vite-react-ts-template', // * <REPO> * //
+  base: '/goit-test-task', // * <REPO> * //
   test: {
     globals: true,
     environment: 'jsdom',
