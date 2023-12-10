@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-for */
 /* eslint-disable jsx-a11y/label-has-associated-control */
+import Notiflix from 'notiflix';
 import { FormEvent, useMemo, useState } from 'react';
 import { URLSearchParamsInit, useSearchParams } from 'react-router-dom';
 
@@ -47,6 +48,7 @@ export const CatalogFilters = () => {
         return true;
       }
 
+      Notiflix.Notify.failure('Mileage must be a number');
       return false;
     }
 
@@ -55,6 +57,7 @@ export const CatalogFilters = () => {
         return true;
       }
 
+      Notiflix.Notify.failure('Mileage must be a number');
       return false;
     }
 
@@ -63,9 +66,11 @@ export const CatalogFilters = () => {
         return true;
       }
 
+      Notiflix.Notify.failure('Min value must be less than max value');
       return false;
     }
 
+    Notiflix.Notify.failure('Mileage must be a number');
     return false;
   };
 
